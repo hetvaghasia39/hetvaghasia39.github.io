@@ -30,7 +30,6 @@
   <meta name="twitter:title" content="VaghasiaHet">
   <meta name="twitter:description" content="I’m a  Python Full-stack software developer based in Ahmedabad, India.">
 
-
   <!-- mobile specific metas
     ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,19 +47,77 @@
   <link rel="shortcut icon" href="./images/name-logo.jpeg" type="image/x-icon" />
   <link rel="icon" href="./images/name-logo.jpeg" type="image/x-icon" />
 
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
 
+    header,
+    .header-nav-wrap,
+    .s-home,
+    .s-about,
+    .s-works,
+    .s-contact,
+    footer {
+      background-color: #000000;
+    }
+
+    h1, h3, h5 {
+      color: #EFC63C;
+    }
+
+    p,
+    ul.skills li.skill,
+    .project-title,
+    .project-desc span {
+      color: #ffffff;
+    }
+
+    .btn--stroke {
+      border-color: #EFC63C;
+      color: #EFC63C;
+    }
+
+    .btn--stroke:hover {
+      background-color: #EFC63C;
+      color: #000000;
+    }
+
+    .header-logo span {
+      color: #ffffff;
+    }
+
+    .header-nav a,
+    .footer-social a {
+      color: #ffffff;
+    }
+
+    .footer-social a:hover {
+      color: #EFC63C;
+    }
+
+    .footer-bottom a {
+      color: #ffffff;
+    }
+
+    .footer-bottom a:hover {
+      color: #EFC63C;
+    }
+
+    .smoothscroll:hover {
+      color: #EFC63C;
+    }
+  </style>
 
 </head>
 
-<body id="top" style="color: black;">
+<body id="top">
   <!-- header
     ================================================== -->
   <header class="s-header">
     <div class="header-logo">
-      <!-- <a class='site-logo' href='/'> -->
       <span style="font-size: xx-large; font-weight:900;font-family: 'system-ui';color: white;"> Het Vaghasia</span>
-      <!-- <img src="apple-touch-icon.png" alt="Home"/> -->
-      <!-- </a> -->
     </div>
 
     <nav class="header-nav-wrap">
@@ -69,9 +126,6 @@
         <li><a class="smoothscroll" href="#about" title="about">About</a></li>
         <li><a class="smoothscroll" href="#works" title="works">Projects</a> </li>
         <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
-        <!-- <li><a class="smoothscroll" href="#articles" title="contact">Ebooks</a> </li> -->
-        <!-- <li><a class="smoothscroll" href="#articles" title="contact">Courses</a> </li> -->
-
       </ul>
     </nav>
 
@@ -89,7 +143,6 @@
       <div class="row home-content__main">
         <h1 style="color: #EFC63C; text-decoration:wavy">Hi 👋,</h1>
 
-
         <h1>
           I am Het Vaghasia. <br />
           <p> <span style="font-size: x-large;" class="mt-5">Software Engineer</span></p>
@@ -103,9 +156,6 @@
               <i class="fa fa-linkedin" aria-hidden="true"></i>
               <span>LinkedIn</span>
             </a></li>
-
-          </a></li>
-
         </ul>
 
         <div class="home-content__buttons">
@@ -117,8 +167,6 @@
           </a>
         </div>
 
-
-
         <div class="home-content__scroll">
           <a style="color: #EFC63C;" href="#about" class="scroll-link smoothscroll">
             <span>Scroll Down</span>
@@ -127,18 +175,15 @@
       </div>
     </div>
     <!-- end home-content -->
-
-
   </section>
 
   <!-- about
     ================================================== -->
-  <section id="about" class="s-about target-section" style="color: black;">
+  <section id="about" class="s-about target-section">
     <div class="row narrow section-intro has-bottom-sep">
       <div class="col-full text-center">
         <h3>About</h3>
         <h1>A Little About Me!</h1>
-
       </div>
     </div>
 
@@ -186,316 +231,93 @@
           <li class="skill">React</li>
           <li class="skill">Git / GitHub</li>
         </ul>
-
-        <!-- <ul class="skills">
-          <li class="skill">Vue</li>
-          <li class="skill">Bootstrap</li>
-        </ul> -->
-
         <ul class="skills">
-          <li class="skill">Linux</li>
-          <li class="skill">PostgreSQL</li>
-          <li class="skill">MySQL</li>
-          <!-- <li class="skill">Agile & TDD</li> -->
+          <li class="skill">AWS</li>
+          <li class="skill">Docker</li>
+          <li class="skill">CI / CD</li>
         </ul>
-
-      </div>
-
-  </section>
-
-  <section id="works" class="s-works target-section" style="color: black;">
-    <div class="row narrow section-intro ">
-      <div class="col-full">
-        <h3>Projects</h3>
-        <!-- <h1>Projects.</h1> -->
-        <p class="lead">
-          Things I have built in the past
-        </p>
-      </div>
-    </div>
-
-    <div class="projects">
-      <div class="container">
-        <div class="project">
-          <div class="project-img-cont">
-            <img src="1.png" alt="project-image" />
-          </div>
-          <h3 class="project-title">Dr. Hivey Virtual Hospital</h3>
-          <p class="project-desc">
-            <span>Dr. Hivey is clinic on mobile for Saudi Arabia’s Neom city which contains different modules for
-              doctor, patient, hospital, laboratoty, radiology and pharmacy. All of these services provided online, and
-              features like appointment, medicine orders, diagnosis, and prescription, etc.
-
-              These project is microservices-based architecture for each module there is different service for each
-              module and whole backed is based on python’s asynchronous framework that is Fast api.
-
-              - Technology stack: Fast api, Angular, Flutter, OracleDB</span>
-          </p>
-          <div class="project-actions">
-            <a href="https://www.hiveyinv.com/drhivey" target="_blank">
-              <button class="btn project-btn">See Live</button>
-            </a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-img-cont">
-            <img src="2.png" alt="project-image" />
-          </div>
-          <h3 class="project-title">ElekGo</h3>
-          <p class="project-desc">
-            <span>
-              Elek Go is a project for rental electric bikes. The project is about booking rides for users and
-              calculating charge for rides and managing and operating vehicle data and admin panel for superusers.
-
-              - Technology stack: Django REST Framework, React JS, Flutter, PostgreSQL.
-            </span>
-          </p>
-          <div class="project-actions">
-            <a href="https://elekgo.com/" target="_blank">
-              <button class="btn project-btn">See Live</button>
-            </a>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-img-cont">
-            <img src="3.png" alt="project-image" />
-          </div>
-          <h3 class="project-title">Deed Entertainments
-          </h3>
-          <p class="project-desc">
-            <span>Built an Admin dashboard and website of a ticket selling platform. Where users can purchase tickets
-              for events of the festival.
-
-              - Technology stack: React JS, mongo DB, Node JS, Redux.
-            </span>
-          </p>
-          <div class="project-actions">
-            <a href="https://deedentertainment.com/" target="_blank">
-              <button class="btn project-btn">See Live</button>
-            </a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-img-cont">
-            <img src="4.png" alt="project-image" />
-          </div>
-          <h3 class="project-title">Hero Trainer</h3>
-          <p class="project-desc">
-            <span>Hero Trainer is a mobile application for body workout and marketplace for gym products, platform for
-              trainer and user can collect coins for purchasing products and connect with any social media.
-
-              - Technology stack: Django Rest Framework, React Native, PostgreSQL, Firebase.</span>
-          </p>
-          <div class="project-actions">
-            <a href="https://herotrainer.io/" target="_blank">
-              <button class="btn project-btn">See Live</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- <div class="project">
-          <div class="project-img-cont">
-            <img src="4.png" alt="project-image" />
-          </div>
-          <h3 class="project-title">Secure Note App</h3>
-          <p class="project-desc">
-            <span>
-              Secure Note is a web application that allows users to share a confidential note via a web link that will
-              self-destruct after it is read by the intended recipient.
-              Made using Html, Css,Javascript, AOS library, Django, PostgreSQL, etc.
-            </span>
-          </p>
-          <div class="project-actions">
-            <a href="http://securenote.xyz/" target="_blank">
-              <button class="btn project-btn">See Live</button>
-            </a>
-          </div>
-        </div> -->
-
       </div>
     </div>
   </section>
-  <!-- end works -->
-  <!-- <section id="articles" class="s-blog target-section">
 
-    <div class="row narrow section-intro ">
-      <div class="col-full">
-
-        <h1>Few picks from the blog.</h1>
-        <p>You might like my articles about software development on
-          <a style="color:black;text-decoration: underline;" href="https://ridwanray.medium.com/" target="_blank">
-            Medium
-            <i class="fa fa-medium" aria-hidden="true"></i>
-          </a>
-        </p>
-
+  <!-- works
+    ================================================== -->
+  <section id="works" class="s-works target-section">
+    <div class="row narrow section-intro has-bottom-sep">
+      <div class="col-full text-center">
+        <h3>Portfolio</h3>
+        <h1>Check Out Some of My Projects.</h1>
       </div>
     </div>
 
-    <div class="row blog-content">
-      <div class="col-full">
-
-        <div class="blog-list block-1-2 block-tab-full">
-          <article class="col-block">
-
-
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/basic-linux-commands-for-beginners-57633f3816ae">
-                Concurrency and Parrallelism demystified (Part 1)</a></h2>
-
-
-          </article>
-          <article class="col-block">
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/a-quick-guide-to-javascript-higher-order-functions-24bad0f15bed">
-                Multiprocessing and Multithreadind simplified (Part 2)</a></h2>
-
-
-          </article>
-          <article class="col-block">
-
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/basic-linux-commands-for-beginners-57633f3816ae">
-                Dependency(DI) Injection simplified.</a></h2>
-
-          </article>
-          <article class="col-block">
-
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/using-a-virtual-environment-in-python-projects-be8011652ca">
-                Race Condition and Dead Lock (Part 3).</a></h2>
-
-          </article>
-          <article class="col-block">
-
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/getting-started-with-string-formatting-in-python-and-the-new-f-string-syntax-b526bbe506c8">
-                Implementation details in Testing.</a></h2>
-
-          </article>
-          <article class="col-block">
-
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/using-a-virtual-environment-in-python-projects-be8011652ca">
-                Design by Contract (DbC).</a></h2>
-
-          </article>
-          <article class="col-block">
-
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/using-a-virtual-environment-in-python-projects-be8011652ca">
-                Interface in Python</a></h2>
-
-          </article>
-          <article class="col-block">
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/using-a-virtual-environment-in-python-projects-be8011652ca">
-                Python Mixin</a></h2>
-
-          </article>
-
-          <article class="col-block">
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/using-a-virtual-environment-in-python-projects-be8011652ca">
-                Efficient code with Python Typing (Type Hints)</a></h2>
-          </article>
-
-          <article class="col-block">
-
-            <h2 class="h01"><a target="_blank"
-                href="https://ridwanray.medium.com/using-a-virtual-environment-in-python-projects-be8011652ca">
-                Instance, Class, and Static method.</a></h2>
-          </article>
+    <div class="row masonry-wrap">
+      <div class="masonry">
+        <div class="masonry__brick">
+          <div class="item-folio">
+            <div class="item-folio__thumb">
+              <a href="#" class="thumb-link">
+                <img src="images/portfolio/automate.png" alt="Automate" />
+              </a>
+            </div>
+            <div class="item-folio__text">
+              <h3 class="project-title">Automate with Python</h3>
+              <span class="project-desc">Description of the project goes here. Describe the work you did and what the
+                project was about.</span>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
+  </section>
 
-  </section>  -->
-  <!-- end s-blog -->
-
-
-
-  <!-- s-stats
+  <!-- contact
     ================================================== -->
   <section id="contact" class="s-contact target-section">
-    <div class="overlay"></div>
-
-    <div class="row narrow section-intro">
-      <div class="col-full">
+    <div class="row narrow section-intro has-bottom-sep">
+      <div class="col-full text-center">
         <h3>Contact</h3>
-        <h1>Want to get in touch?</h1>
-
-
+        <h1>Get In Touch.</h1>
       </div>
     </div>
 
-    <div class="row contact__main">
-
-      <div style="text-align: center;">
-
-        <h4 class="h06">Email</h4>
-        <p>hetvaghasia39@gmail.com <br /></p>
-
+    <div class="row contact-content">
+      <div class="col-full">
+        <p>If you would like to get in touch with me, feel free to send me an email at <a
+            href="mailto:hetvaghasia39@gmail.com">hetvaghasia39@gmail.com</a> or connect with me on social media
+          platforms.</p>
       </div>
     </div>
   </section>
-  <!-- end s-contact -->
 
+  <!-- footer
+    ================================================== -->
   <footer>
-    <div class="row">
-      <div class="col-full">
+    <div class="row footer-main">
+      <div class="col-six tab-full left">
+        <h4>Contact</h4>
+        <p>If you would like to get in touch with me, feel free to send me an email at <a
+            href="mailto:hetvaghasia39@gmail.com">hetvaghasia39@gmail.com</a>.</p>
+      </div>
 
-
-
+      <div class="col-six tab-full right">
+        <h4>Social</h4>
         <ul class="footer-social">
-          <li><a href="https://www.github.com/hetvaghasia39" target="_blank">
-              <i class="fa fa-github" aria-hidden="true"></i>
-              <span>Github</span>
-            </a></li>
-          <li><a href="https://www.linkedin.com/in/het-vaghasia/" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-              <span>LinkedIn</span>
-            </a></li>
-          <li><a href="mailto:hetvaghasia39@gmail.com" target="_blank">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>Mail</span>
-            </a></li>
+          <li><a href="https://www.github.com/hetvaghasia39" target="_blank"><i class="fa fa-github"
+                aria-hidden="true"></i> Github</a></li>
+          <li><a href="https://www.linkedin.com/in/het-vaghasia/" target="_blank"><i class="fa fa-linkedin"
+                aria-hidden="true"></i> LinkedIn</a></li>
         </ul>
-
       </div>
     </div>
 
     <div class="row footer-bottom">
-
-      <div class="col-twelve">
-
-
-        <div class="go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+      <div class="col-full">
+        <div class="footer-logo">
+          <span style="font-size: xx-large; font-weight:900;font-family: 'system-ui';color: white;"> Het Vaghasia</span>
         </div>
       </div>
-
-    </div> <!-- end footer-bottom -->
-
-  </footer> <!-- end footer -->
-
-
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
-
-  <script src='https://d33wubrfki0l68.cloudfront.net/bundles/493db21b5c3403a6746bb96eac32152e52cc26e0.js'></script>
+    </div>
+  </footer>
 
 </body>
 
